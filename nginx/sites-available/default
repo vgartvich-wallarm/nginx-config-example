@@ -13,7 +13,7 @@ server {
     return 200;
   }
   location /category/uncategorized {
-    return 401;
+    return 403;
   }
   location / {
     limit_req zone=mylimit burst=10 nodelay;
