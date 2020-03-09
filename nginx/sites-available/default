@@ -12,6 +12,9 @@ server {
   location /healthcheck {
     return 200;
   }
+  location /category/uncategorized {
+    return 404;
+  }
   location / {
     limit_req zone=mylimit burst=10 nodelay;
     # setting the address for request forwarding
